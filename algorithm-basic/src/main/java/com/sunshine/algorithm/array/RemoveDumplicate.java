@@ -14,13 +14,13 @@ public class RemoveDumplicate {
 			return 1;
 		}
 		int count = 0;
-		int remark = nums[0];
-		for (int i = 0; i < nums.length; i++) {
-			if (remark == nums[i]) {
-				count ++;
-				remark ==
+		int index = 0;
+		for (int i = 1; i < nums.length; i++) {
+			if (nums[index] != nums[i]) {
+				count++;
+				nums[++index] = nums[i];
 			}
 		}
-		return count++;
+		return ++count;
 	}
 }
