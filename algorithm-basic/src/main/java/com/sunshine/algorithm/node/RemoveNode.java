@@ -8,10 +8,10 @@ package com.sunshine.algorithm.node;
 public class RemoveNode {
 
 	public void deleteNode(ListNode node) {
-		while (node.next != null) {
-			node.val = node.next.val;
-			node = node.next;
-		}
+		// 此题需要注意审题
+		// 直接将当前节点替换为下个节点，当前节点的下一个节点替换为下下个节点
+		node.val = node.next.val;
+		node.next = node.next.next;
 	}
 
 	static class ListNode {
