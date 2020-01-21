@@ -25,4 +25,24 @@ public class PlusOneTest {
 	public void plusOneTestThree() {
 		Arrays.stream(new PlusOne().plusOne(new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1, 0})).forEach(System.out::println);
 	}
+
+	@Test
+	public void plusOneTestFour() {
+		Arrays.stream(new PlusOne().plusOne(new int[]{4, 9})).forEach(System.out::println);
+	}
+
+	@Test
+	public void plusOneTestFive() {
+		Arrays.stream(new PlusOne().plusOne(new int[]{9, 9})).forEach(System.out::println);
+	}
+
+	@Test
+	public void plusOneTestSix() {
+		Arrays.stream(new PlusOne().plusOne(new int[]{4, 9, 9})).forEach(System.out::println);
+	}
+
+	@Test
+	public void plusOneTestSeven() {
+		Arrays.stream(new PlusOne().plusOne(new int[]{9})).forEach(System.out::println);
+	}
 }
