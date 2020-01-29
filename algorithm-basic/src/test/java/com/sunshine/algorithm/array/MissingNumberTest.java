@@ -21,4 +21,14 @@ public class MissingNumberTest {
 		Assertions.assertEquals(8, new MissingNumber().missingNumber(new int[]{9, 6, 4, 2, 3, 5, 7, 0, 1}));
 	}
 
+	@Test
+	public void missingNumberTestThree() {
+		Assertions.assertEquals(2, new MissingNumber().missingNumberUpgradeTwo(new int[]{3, 0, 1}));
+	}
+
+	@Test
+	public void missingNumberTestFour() {
+		Assertions.assertEquals(8, new MissingNumber().missingNumberUpgradeTwo(new int[]{9, 6, 4, 2, 3, 5, 7, 0, 1}));
+	}
+
 }
