@@ -1,7 +1,5 @@
 package com.sunshine.algorithm.array;
 
-import java.util.Arrays;
-
 /**
  * 合并两个有序数组
  * 题目：No.88
@@ -24,7 +22,7 @@ public class MergeSortedArray {
 					nums1[i] = nums2[--n];
 				}
 			} else if (n > 0) {
-				nums1 = Arrays.copyOf(nums2, n - 1);
+				System.arraycopy(nums2, 0, nums1, 0, n);
 			}
 		}
 	}

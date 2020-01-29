@@ -1,6 +1,6 @@
 package com.sunshine.algorithm.node;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * 第203题：移除链表元素单元测试

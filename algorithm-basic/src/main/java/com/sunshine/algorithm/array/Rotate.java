@@ -1,25 +1,47 @@
 package com.sunshine.algorithm.array;
 
 /**
- * 数组移位
- *
- * @author <sunshine> mysunshinedreams@163.com
+ * 题目：数组移位
+ * 给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。
+ * 说明:
+ * * 尽可能想出更多的解决方案，至少有三种不同的方法可以解决这个问题。
+ * * 要求使用空间复杂度为 O(1) 的 原地 算法。
+ * @author sunshine
  * @date 2018-12-26 19:44
  */
 public class Rotate {
 
+	/**
+	 * 思路：递归
+	 * 转换数组，采用归并的思想
+	 * 先将数组中所有的元素进行旋转
+	 * 然后以k为分界线，前后分别进行翻转
+	 * @param nums 给定的数组
+	 * @param k    向右移动k个位置
+	 */
 	public void rotate(int[] nums, int k) {
-		if (nums.length <= k) {
-			return;
+		k = k % nums.length;
+		reverse(nums, 0, nums.length - 1);
+		reverse(nums, 0, k - 1);
+		reverse(nums, k, nums.length - 1);
+	}
+
+	private void reverse(int[] nums, int start, int end) {
+		while (start < end) {
+			int temp = nums[start];
+			nums[start] = nums[end];
+			nums[end] = temp;
+			start++;
+			end--;
 		}
-		int length = nums.length;
-		int i = length - k;
-		while (i < length) {
-			int postion = i % (k + 1);
-			int temp = nums[i];
-			nums[i] = nums[postion];
-			nums[postion] = temp;
-			i++;
-		}
+	}
+
+	/**
+	 * 环装替换
+	 * @param nums 给定的数组
+	 * @param k    向右移动k个位置
+	 */
+	public void rotateUpgrade(int[] nums, int k) {
+
 	}
 }

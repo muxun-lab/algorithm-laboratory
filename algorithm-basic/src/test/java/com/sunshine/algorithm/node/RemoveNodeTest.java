@@ -1,6 +1,6 @@
 package com.sunshine.algorithm.node;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Sunshine

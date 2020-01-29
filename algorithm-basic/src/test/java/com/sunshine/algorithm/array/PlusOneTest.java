@@ -1,14 +1,15 @@
 package com.sunshine.algorithm.array;
 
-import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
 /**
- * 加一测试类
  * @author sunshine
  * @date 2020/1/20
  */
+@DisplayName("加一测试类")
 public class PlusOneTest {
 
 	@Test

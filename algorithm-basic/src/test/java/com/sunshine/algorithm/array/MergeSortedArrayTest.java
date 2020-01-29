@@ -1,14 +1,15 @@
 package com.sunshine.algorithm.array;
 
-import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
 /**
- * 合并两个有序数组测试类
  * @author sunshine
  * @date 2020/1/21
  */
+@DisplayName("合并两个有序数组测试类")
 public class MergeSortedArrayTest {
 
 	@Test

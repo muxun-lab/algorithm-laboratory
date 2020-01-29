@@ -1,21 +1,21 @@
 package com.sunshine.algorithm.array;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
 /**
- * @author <sunshine> mysunshinedreams@163.com
+ * @author sunshine
  * @date 2018-12-25 19:56
  */
+@DisplayName("移除重复元素测试类")
 public class RemoveDuplicateEntryTest {
 
 	private int[] nums;
 
 	private RemoveDuplicateEntry removeDuplicateEntry;
 
-	@Before
 	public void before() {
 		removeDuplicateEntry = new RemoveDuplicateEntry();
 		nums = new int[]{1};

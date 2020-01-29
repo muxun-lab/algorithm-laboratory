@@ -1,9 +1,7 @@
 package com.sunshine.algorithm.queue;
 
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author <sunshine> mysunshinedreams@163.com
@@ -13,35 +11,33 @@ public class RecycleQueueTest {
 
 	private RecycleQueue recycleQueue;
 
-	@Before
 	public void constructor() {
 		this.recycleQueue = new RecycleQueue(3);
 	}
 
 	@Test
 	public void testIsEmpty() {
-		Assert.assertEquals(true, this.recycleQueue.isEmpty());
+		Assertions.assertTrue(this.recycleQueue.isEmpty());
 	}
 
 	@Test
 	public void testIsFull() {
-		Assert.assertEquals(false, this.recycleQueue.isFull());
+		Assertions.assertFalse(this.recycleQueue.isFull());
 	}
 
 	@Test
 	public void testEnqueue() {
-		Assert.assertEquals(true, this.recycleQueue.enQueue(1));
-		Assert.assertEquals(true, this.recycleQueue.enQueue(2));
-		Assert.assertEquals(true, this.recycleQueue.enQueue(3));
-		Assert.assertEquals(false, this.recycleQueue.enQueue(4));
-		Assert.assertEquals(3, this.recycleQueue.Rear());
-		Assert.assertEquals(true, this.recycleQueue.isFull());
-		Assert.assertEquals(true, this.recycleQueue.deQueue());
-		Assert.assertEquals(true, this.recycleQueue.enQueue(4));
-		Assert.assertEquals(4, this.recycleQueue.Rear());
+		Assertions.assertTrue(this.recycleQueue.enQueue(1));
+		Assertions.assertTrue(this.recycleQueue.enQueue(2));
+		Assertions.assertTrue(this.recycleQueue.enQueue(3));
+		Assertions.assertFalse(this.recycleQueue.enQueue(4));
+		Assertions.assertEquals(3, this.recycleQueue.Rear());
+		Assertions.assertTrue(this.recycleQueue.isFull());
+		Assertions.assertTrue(this.recycleQueue.deQueue());
+		Assertions.assertTrue(this.recycleQueue.enQueue(4));
+		Assertions.assertEquals(4, this.recycleQueue.Rear());
 	}
 
-	@After
 	public void print() {
 
 	}

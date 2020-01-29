@@ -1,12 +1,14 @@
 package com.sunshine.algorithm.array;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 /**
- * 搜索传入位置测试类
  * @author sunshine
  * @date 2020/1/20
  */
+@DisplayName("搜索传入位置测试类")
 public class SearchInsertTest {
 
 	@Test

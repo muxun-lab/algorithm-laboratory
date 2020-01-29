@@ -1,14 +1,15 @@
 package com.sunshine.algorithm.array;
 
-import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
 /**
- * 两数之和测试用例
  * @author sunshine
  * @date 2020/1/20
  */
+@DisplayName("两数之和测试用例")
 public class TwoAdderTest {
 
 	private int[] nums;
