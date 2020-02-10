@@ -90,7 +90,6 @@ public class LongestOnes {
 		int start = 0;
 		int end = 0;
 		int max = 0;
-		int count = 0;
 		while (end < A.length) {
 			if (A[end] == 0) {
 				if (K == 0) {
