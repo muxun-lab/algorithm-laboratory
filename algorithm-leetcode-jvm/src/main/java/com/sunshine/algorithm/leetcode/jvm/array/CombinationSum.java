@@ -35,9 +35,6 @@ public class CombinationSum {
 		if (candidates.length <= 0) {
 			return resultList;
 		}
-		if (candidates.length == 1 && candidates[0] != target) {
-			return resultList;
-		}
 		Arrays.sort(candidates);
 		LinkedList<Integer> backtrack = new LinkedList<>();
 		backtrack(candidates, 0, backtrack, target);
