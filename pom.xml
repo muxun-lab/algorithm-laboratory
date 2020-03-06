@@ -13,6 +13,7 @@
         <module>algorithm-leetcode-jvm</module>
         <module>algorithm-common</module>
         <module>algorithm-leetcode-competition</module>
+        <module>algorithm-offer-jvm</module>
     </modules>
 
     <properties>
