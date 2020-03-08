@@ -54,9 +54,9 @@ public class CoinChange {
 			}
 			return;
 		}
-		for (int i = 0; i < coins.length; i++) {
-			backtrackList.add(coins[i]);
-			backtrack(coins, target - coins[i], backtrackList);
+		for (int coin : coins) {
+			backtrackList.add(coin);
+			backtrack(coins, target - coin, backtrackList);
 			backtrackList.removeLast();
 		}
 	}
