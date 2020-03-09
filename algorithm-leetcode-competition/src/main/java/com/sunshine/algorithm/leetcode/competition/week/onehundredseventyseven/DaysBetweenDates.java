@@ -1,6 +1,13 @@
 package com.sunshine.algorithm.leetcode.competition.week.onehundredseventyseven;
 
 /**
+ * 题号：1360
+ * 题目：日期之间隔几天
+ * 详情：请你编写一个程序来计算两个日期之间隔了多少天
+ * 日期以字符串形式给出，格式为 YYYY-MM-DD
+ *
+ * 提示：
+ * * 给定的日期是 1971 年到 2100 年之间的有效日期
  * @author sunshine
  * @created 2020-02-23
  */
