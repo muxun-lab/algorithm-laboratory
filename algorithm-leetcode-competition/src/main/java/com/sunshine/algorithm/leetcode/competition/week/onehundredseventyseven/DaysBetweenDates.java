@@ -1,4 +1,4 @@
-package com.sunshine.algorithm.leetcode.competition.onehundredseventyseven;
+package com.sunshine.algorithm.leetcode.competition.week.onehundredseventyseven;
 
 /**
  * @author sunshine

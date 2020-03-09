@@ -1,5 +1,5 @@
 /**
- * 算法——Leetcode题解——Java
+ * Leetcode题解——Java语言
  * @author sunshine
  * @created 2020-02-14
  */

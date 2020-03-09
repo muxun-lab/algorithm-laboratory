@@ -1,4 +1,4 @@
-package com.sunshine.algorithm.leetcode.competition.onehundredseventyeight;
+package com.sunshine.algorithm.leetcode.competition.week.onehundredseventyeight;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

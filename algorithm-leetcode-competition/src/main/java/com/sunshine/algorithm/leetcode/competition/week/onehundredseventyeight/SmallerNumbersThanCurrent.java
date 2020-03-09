@@ -1,4 +1,4 @@
-package com.sunshine.algorithm.leetcode.competition.onehundredseventyeight;
+package com.sunshine.algorithm.leetcode.competition.week.onehundredseventyeight;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package com.sunshine.algorithm.greedy;
+package com.sunshine.algorithm.basic.greedy;
 
 /**
  * @author sunshine

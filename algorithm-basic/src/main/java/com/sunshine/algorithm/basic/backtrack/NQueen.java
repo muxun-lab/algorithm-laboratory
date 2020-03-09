@@ -1,4 +1,4 @@
-package com.sunshine.algorithm.backtrack;
+package com.sunshine.algorithm.basic.backtrack;
 
 import java.util.Arrays;
 

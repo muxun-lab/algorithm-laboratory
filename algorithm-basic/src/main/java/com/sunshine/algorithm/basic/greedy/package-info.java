@@ -3,4 +3,4 @@
  * @author sunshine
  * @created 2020-02-14
  */
-package com.sunshine.algorithm.greedy;
+package com.sunshine.algorithm.basic.greedy;
