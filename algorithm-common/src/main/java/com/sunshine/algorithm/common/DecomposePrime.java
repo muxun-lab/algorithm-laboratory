@@ -10,11 +10,17 @@ import java.util.List;
  */
 public class DecomposePrime {
 
-	public void decompose(int n) {
+	/**
+	 * 思路：余数为0，则视为因数
+	 * @param n 给定的数
+	 * @return 给定的数的因数
+	 */
+	public List<Integer> decompose(int n) {
 		if (n <= 1) {
-			return;
+			return new ArrayList<>();
 		}
 		List<Integer> nodeList = new ArrayList<>();
+		// 1不属于质数
 		for (int i = 2; i <= n / 2; i++) {
 			// 整除才是因数
 			if (n % i == 0) {
@@ -23,9 +29,8 @@ public class DecomposePrime {
 				i = 2;
 			}
 		}
+		// 自己本身也是因数
 		nodeList.add(n);
-		for (Integer integer : nodeList) {
-			System.out.println(integer);
-		}
+		return nodeList;
 	}
 }

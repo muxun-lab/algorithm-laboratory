@@ -1,6 +1,9 @@
 package com.sunshine.algorithm.common;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
 
 /**
  * @author Sunshine
@@ -8,15 +11,13 @@ import org.junit.jupiter.api.Test;
  */
 public class DecomposePrimeTest {
 
-	private DecomposePrime decomposePrime = new DecomposePrime();
-
 	@Test
 	public void testDecomposeOneTest() {
-		this.decomposePrime.decompose(2);
+		Assertions.assertIterableEquals(List.of(2), new DecomposePrime().decompose(2));
 	}
 
 	@Test
 	public void testDecomposeTwoTest() {
-		this.decomposePrime.decompose(60);
+		Assertions.assertIterableEquals(List.of(2, 3, 5, 2), new DecomposePrime().decompose(60));
 	}
 }
