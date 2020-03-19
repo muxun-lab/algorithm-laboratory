@@ -115,4 +115,35 @@ public class BinaryTreeInorderTraversal {
 		resultList.add(currentNode.val);
 		recursion(currentNode.right);
 	}
+
+	/**
+	 * 思路：莫里斯遍历
+	 * @param root 二叉树根节点
+	 * @return 二叉树的中序遍历
+	 */
+	public List<Integer> inorderTraversalMorris(TreeNode root) {
+		List<Integer> resultList = new ArrayList<>();
+		TreeNode current = root;
+		TreeNode previous;
+		while (current != null) {
+			if (current.left == null) {
+				resultList.add(current.val);
+				current = current.right;
+			} else {
+				previous = current.left;
+				while (previous.right != null && previous.right != current) {
+					previous = previous.right;
+				}
+				if (previous.right == null) {
+					previous.right = current;
+					current = current.left;
+				} else {
+					previous.right = null;
+					resultList.add(current.val);
+					current = current.right;
+				}
+			}
+		}
+		return resultList;
+	}
 }
