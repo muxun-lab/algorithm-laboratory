@@ -15,6 +15,7 @@
         <module>algorithm-leetcode-competition</module>
         <module>algorithm-offer-jvm</module>
         <module>algorithm-interview-jvm</module>
+        <module>algorithm-bytedance</module>
     </modules>
 
     <properties>
