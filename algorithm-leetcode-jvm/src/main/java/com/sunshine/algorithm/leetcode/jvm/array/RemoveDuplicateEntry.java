@@ -13,8 +13,10 @@ public class RemoveDuplicateEntry {
 		}
 		int index = 0;
 		for (int i = 0; i < nums.length; i++) {
+			// 如果值不相同，进行替换，i是快指针
 			if (nums[i] != val) {
 				nums[index] = nums[i];
+				// index是慢指针
 				index++;
 			}
 		}

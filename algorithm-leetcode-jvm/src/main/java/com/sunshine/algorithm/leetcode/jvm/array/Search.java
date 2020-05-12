@@ -33,7 +33,7 @@ public class Search {
 			}
 			// 前半部分有序
 			if (nums[start] <= nums[middle]) {
-				// targe在前半部分
+				// target在前半部分
 				if (nums[start] <= target && target <= nums[middle]) {
 					end = middle - 1;
 				} else {
