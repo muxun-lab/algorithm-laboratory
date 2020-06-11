@@ -3,7 +3,8 @@ package com.sunshine.algorithm.leetcode.jvm.array;
 /**
  * 题号：485
  * 题目：最大连续1的个数
- * 详情：给定一个二进制数组， 计算其中最大连续1的个数。
+ * 题链：https://leetcode-cn.com/problems/max-consecutive-ones/
+ * 详情：给定一个二进制数组，计算其中最大连续1的个数。
  * @author sunshine
  * @created 2020-02-10
  */
