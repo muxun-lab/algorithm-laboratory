@@ -16,6 +16,7 @@
         <module>algorithm-offer-jvm</module>
         <module>algorithm-interview-jvm</module>
         <module>algorithm-bytedance</module>
+        <module>algorithm-leetcode-lcp-jvm</module>
     </modules>
 
     <properties>
