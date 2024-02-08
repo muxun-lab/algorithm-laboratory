@@ -3,12 +3,12 @@ package com.sunshine.algorithm.leetcode.jvm.array;
 /**
  * 题号：42
  * 题目：接雨水
- * 题链：https://leetcode-cn.com/problems/trapping-rain-water/
+ * 题链：<a href="https://leetcode-cn.com/problems/trapping-rain-water/">接雨水</a>
  * 详情：给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水
  * @author sunshine
  * @date 2020/6/1
  */
-public class TrappingRainWater {
+public class LeetCode42 {
 
 	/**
 	 * 思路：暴力，每个位置分别获取左边界和右边界
