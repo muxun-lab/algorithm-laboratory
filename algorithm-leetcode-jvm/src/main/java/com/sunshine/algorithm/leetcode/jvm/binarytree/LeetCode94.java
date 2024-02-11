@@ -3,16 +3,16 @@ package com.sunshine.algorithm.leetcode.jvm.binarytree;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Stack;
 
 /**
- * 题号：94
- * 题目：二叉树的中序遍历
- * 详情：给定一个二叉树，返回它的中序 遍历。
- * @author sunshine
+ * 题号: 94
+ * 题目: 二叉树的中序遍历
+ * 链接: <a href="https://leetcode.cn/problems/binary-tree-inorder-traversal">二叉树的中序遍历</a>
+ * 详情: 给定一个二叉树，返回它的 中序 遍历。
+ * @author 慕勋
  * @created 2020-03-13
  */
-public class BinaryTreeInorderTraversal {
+public class LeetCode94 {
 
 	private List<Integer> resultList = new ArrayList<>();
 
@@ -80,7 +80,7 @@ public class BinaryTreeInorderTraversal {
 	 * @return 二叉树的中序遍历
 	 */
 	public List<Integer> inorderTraversalIteratorUpgrade(TreeNode root) {
-		Stack<TreeNode> stack = new Stack<>();
+		LinkedList<TreeNode> stack = new LinkedList<>();
 		TreeNode currentNode = root;
 		while (currentNode != null || !stack.isEmpty()) {
 			while (currentNode != null) {

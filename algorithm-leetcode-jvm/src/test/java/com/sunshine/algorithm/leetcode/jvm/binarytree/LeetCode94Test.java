@@ -7,18 +7,18 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 /**
- * @author sunshine
+ * @author 慕勋
  * @created 2020-03-13
  */
-@DisplayName("二叉树的中序遍历单元测试")
-public class BinaryTreeInorderTraversalTest {
+@DisplayName("二叉树的中序遍历测试用例")
+public class LeetCode94Test {
 
 	@Test
 	public void binaryTreeInorderTraversalTestOne() {
 		TreeNode root = new TreeNode(1);
 		root.right = new TreeNode(2);
 		root.right.left = new TreeNode(3);
-		Assertions.assertIterableEquals(List.of(1, 3, 2), new BinaryTreeInorderTraversal().inorderTraversal(root));
+		Assertions.assertIterableEquals(List.of(1, 3, 2), new LeetCode94().inorderTraversal(root));
 	}
 
 	@Test
@@ -34,7 +34,7 @@ public class BinaryTreeInorderTraversalTest {
 		root.right = new TreeNode(3);
 		root.right.left = new TreeNode(6);
 		root.right.right = new TreeNode(7);
-		Assertions.assertIterableEquals(List.of(8, 4, 9, 2, 10, 5, 11, 1, 6, 3, 7), new BinaryTreeInorderTraversal().inorderTraversal(root));
+		Assertions.assertIterableEquals(List.of(8, 4, 9, 2, 10, 5, 11, 1, 6, 3, 7), new LeetCode94().inorderTraversal(root));
 	}
 
 	@Test
@@ -43,20 +43,20 @@ public class BinaryTreeInorderTraversalTest {
 		root.right = new TreeNode(3);
 		root.right.left = new TreeNode(4);
 		root.right.left.left = new TreeNode(1);
-		Assertions.assertIterableEquals(List.of(2, 1, 4, 3), new BinaryTreeInorderTraversal().inorderTraversal(root));
+		Assertions.assertIterableEquals(List.of(2, 1, 4, 3), new LeetCode94().inorderTraversal(root));
 	}
 
 	@Test
 	public void binaryTreeInorderTraversalTestFour() {
 		TreeNode root = new TreeNode(1);
 		root.right = new TreeNode(2);
-		Assertions.assertIterableEquals(List.of(1, 2), new BinaryTreeInorderTraversal().inorderTraversal(root));
+		Assertions.assertIterableEquals(List.of(1, 2), new LeetCode94().inorderTraversal(root));
 	}
 
 	@Test
 	public void binaryTreeInorderTraversalTestFive() {
 		TreeNode root = new TreeNode(1);
-		Assertions.assertIterableEquals(List.of(1), new BinaryTreeInorderTraversal().inorderTraversal(root));
+		Assertions.assertIterableEquals(List.of(1), new LeetCode94().inorderTraversal(root));
 	}
 
 	@Test
@@ -66,7 +66,7 @@ public class BinaryTreeInorderTraversalTest {
 		root.left.right = new TreeNode(2);
 		root.left.right.left = new TreeNode(4);
 		root.left.right.left.left = new TreeNode(5);
-		Assertions.assertIterableEquals(List.of(1, 5, 4, 2, 3), new BinaryTreeInorderTraversal().inorderTraversal(root));
+		Assertions.assertIterableEquals(List.of(1, 5, 4, 2, 3), new LeetCode94().inorderTraversal(root));
 	}
 
 	@Test
@@ -75,7 +75,7 @@ public class BinaryTreeInorderTraversalTest {
 		root.left = new TreeNode(4);
 		root.right = new TreeNode(3);
 		root.left.left = new TreeNode(2);
-		Assertions.assertIterableEquals(List.of(2, 4, 1, 3), new BinaryTreeInorderTraversal().inorderTraversal(root));
+		Assertions.assertIterableEquals(List.of(2, 4, 1, 3), new LeetCode94().inorderTraversal(root));
 	}
 
 	@Test
@@ -83,7 +83,7 @@ public class BinaryTreeInorderTraversalTest {
 		TreeNode root = new TreeNode(1);
 		root.right = new TreeNode(2);
 		root.right.left = new TreeNode(3);
-		Assertions.assertIterableEquals(List.of(1, 3, 2), new BinaryTreeInorderTraversal().inorderTraversalIteratorUpgrade(root));
+		Assertions.assertIterableEquals(List.of(1, 3, 2), new LeetCode94().inorderTraversalIteratorUpgrade(root));
 	}
 
 	@Test
@@ -99,7 +99,7 @@ public class BinaryTreeInorderTraversalTest {
 		root.right = new TreeNode(3);
 		root.right.left = new TreeNode(6);
 		root.right.right = new TreeNode(7);
-		Assertions.assertIterableEquals(List.of(8, 4, 9, 2, 10, 5, 11, 1, 6, 3, 7), new BinaryTreeInorderTraversal().inorderTraversalIteratorUpgrade(root));
+		Assertions.assertIterableEquals(List.of(8, 4, 9, 2, 10, 5, 11, 1, 6, 3, 7), new LeetCode94().inorderTraversalIteratorUpgrade(root));
 	}
 
 	@Test
@@ -108,20 +108,20 @@ public class BinaryTreeInorderTraversalTest {
 		root.right = new TreeNode(3);
 		root.right.left = new TreeNode(4);
 		root.right.left.left = new TreeNode(1);
-		Assertions.assertIterableEquals(List.of(2, 1, 4, 3), new BinaryTreeInorderTraversal().inorderTraversalIteratorUpgrade(root));
+		Assertions.assertIterableEquals(List.of(2, 1, 4, 3), new LeetCode94().inorderTraversalIteratorUpgrade(root));
 	}
 
 	@Test
 	public void binaryTreeInorderTraversalIteratorUpgradeTestFour() {
 		TreeNode root = new TreeNode(1);
 		root.right = new TreeNode(2);
-		Assertions.assertIterableEquals(List.of(1, 2), new BinaryTreeInorderTraversal().inorderTraversalIteratorUpgrade(root));
+		Assertions.assertIterableEquals(List.of(1, 2), new LeetCode94().inorderTraversalIteratorUpgrade(root));
 	}
 
 	@Test
 	public void binaryTreeInorderTraversalIteratorUpgradeTestFive() {
 		TreeNode root = new TreeNode(1);
-		Assertions.assertIterableEquals(List.of(1), new BinaryTreeInorderTraversal().inorderTraversalIteratorUpgrade(root));
+		Assertions.assertIterableEquals(List.of(1), new LeetCode94().inorderTraversalIteratorUpgrade(root));
 	}
 
 	@Test
@@ -131,7 +131,7 @@ public class BinaryTreeInorderTraversalTest {
 		root.left.right = new TreeNode(2);
 		root.left.right.left = new TreeNode(4);
 		root.left.right.left.left = new TreeNode(5);
-		Assertions.assertIterableEquals(List.of(1, 5, 4, 2, 3), new BinaryTreeInorderTraversal().inorderTraversalIteratorUpgrade(root));
+		Assertions.assertIterableEquals(List.of(1, 5, 4, 2, 3), new LeetCode94().inorderTraversalIteratorUpgrade(root));
 	}
 
 	@Test
@@ -140,7 +140,7 @@ public class BinaryTreeInorderTraversalTest {
 		root.left = new TreeNode(4);
 		root.right = new TreeNode(3);
 		root.left.left = new TreeNode(2);
-		Assertions.assertIterableEquals(List.of(2, 4, 1, 3), new BinaryTreeInorderTraversal().inorderTraversalIteratorUpgrade(root));
+		Assertions.assertIterableEquals(List.of(2, 4, 1, 3), new LeetCode94().inorderTraversalIteratorUpgrade(root));
 	}
 
 	@Test
@@ -148,7 +148,7 @@ public class BinaryTreeInorderTraversalTest {
 		TreeNode root = new TreeNode(1);
 		root.right = new TreeNode(2);
 		root.right.left = new TreeNode(3);
-		Assertions.assertIterableEquals(List.of(1, 3, 2), new BinaryTreeInorderTraversal().inorderTraversalRecursion(root));
+		Assertions.assertIterableEquals(List.of(1, 3, 2), new LeetCode94().inorderTraversalRecursion(root));
 	}
 
 	@Test
@@ -164,7 +164,7 @@ public class BinaryTreeInorderTraversalTest {
 		root.right = new TreeNode(3);
 		root.right.left = new TreeNode(6);
 		root.right.right = new TreeNode(7);
-		Assertions.assertIterableEquals(List.of(8, 4, 9, 2, 10, 5, 11, 1, 6, 3, 7), new BinaryTreeInorderTraversal().inorderTraversalRecursion(root));
+		Assertions.assertIterableEquals(List.of(8, 4, 9, 2, 10, 5, 11, 1, 6, 3, 7), new LeetCode94().inorderTraversalRecursion(root));
 	}
 
 	@Test
@@ -173,20 +173,20 @@ public class BinaryTreeInorderTraversalTest {
 		root.right = new TreeNode(3);
 		root.right.left = new TreeNode(4);
 		root.right.left.left = new TreeNode(1);
-		Assertions.assertIterableEquals(List.of(2, 1, 4, 3), new BinaryTreeInorderTraversal().inorderTraversalRecursion(root));
+		Assertions.assertIterableEquals(List.of(2, 1, 4, 3), new LeetCode94().inorderTraversalRecursion(root));
 	}
 
 	@Test
 	public void binaryTreeInorderTraversalRecursionTestFour() {
 		TreeNode root = new TreeNode(1);
 		root.right = new TreeNode(2);
-		Assertions.assertIterableEquals(List.of(1, 2), new BinaryTreeInorderTraversal().inorderTraversalRecursion(root));
+		Assertions.assertIterableEquals(List.of(1, 2), new LeetCode94().inorderTraversalRecursion(root));
 	}
 
 	@Test
 	public void binaryTreeInorderTraversalRecursionTestFive() {
 		TreeNode root = new TreeNode(1);
-		Assertions.assertIterableEquals(List.of(1), new BinaryTreeInorderTraversal().inorderTraversalRecursion(root));
+		Assertions.assertIterableEquals(List.of(1), new LeetCode94().inorderTraversalRecursion(root));
 	}
 
 	@Test
@@ -196,7 +196,7 @@ public class BinaryTreeInorderTraversalTest {
 		root.left.right = new TreeNode(2);
 		root.left.right.left = new TreeNode(4);
 		root.left.right.left.left = new TreeNode(5);
-		Assertions.assertIterableEquals(List.of(1, 5, 4, 2, 3), new BinaryTreeInorderTraversal().inorderTraversalRecursion(root));
+		Assertions.assertIterableEquals(List.of(1, 5, 4, 2, 3), new LeetCode94().inorderTraversalRecursion(root));
 	}
 
 	@Test
@@ -204,7 +204,7 @@ public class BinaryTreeInorderTraversalTest {
 		TreeNode root = new TreeNode(1);
 		root.right = new TreeNode(2);
 		root.right.left = new TreeNode(3);
-		Assertions.assertIterableEquals(List.of(1, 3, 2), new BinaryTreeInorderTraversal().inorderTraversalMorris(root));
+		Assertions.assertIterableEquals(List.of(1, 3, 2), new LeetCode94().inorderTraversalMorris(root));
 	}
 
 	@Test
@@ -220,7 +220,7 @@ public class BinaryTreeInorderTraversalTest {
 		root.right = new TreeNode(3);
 		root.right.left = new TreeNode(6);
 		root.right.right = new TreeNode(7);
-		Assertions.assertIterableEquals(List.of(8, 4, 9, 2, 10, 5, 11, 1, 6, 3, 7), new BinaryTreeInorderTraversal().inorderTraversalMorris(root));
+		Assertions.assertIterableEquals(List.of(8, 4, 9, 2, 10, 5, 11, 1, 6, 3, 7), new LeetCode94().inorderTraversalMorris(root));
 	}
 
 	@Test
@@ -229,20 +229,20 @@ public class BinaryTreeInorderTraversalTest {
 		root.right = new TreeNode(3);
 		root.right.left = new TreeNode(4);
 		root.right.left.left = new TreeNode(1);
-		Assertions.assertIterableEquals(List.of(2, 1, 4, 3), new BinaryTreeInorderTraversal().inorderTraversalMorris(root));
+		Assertions.assertIterableEquals(List.of(2, 1, 4, 3), new LeetCode94().inorderTraversalMorris(root));
 	}
 
 	@Test
 	public void binaryTreeInorderTraversalMorrisTestFour() {
 		TreeNode root = new TreeNode(1);
 		root.right = new TreeNode(2);
-		Assertions.assertIterableEquals(List.of(1, 2), new BinaryTreeInorderTraversal().inorderTraversalMorris(root));
+		Assertions.assertIterableEquals(List.of(1, 2), new LeetCode94().inorderTraversalMorris(root));
 	}
 
 	@Test
 	public void binaryTreeInorderTraversalMorrisTestFive() {
 		TreeNode root = new TreeNode(1);
-		Assertions.assertIterableEquals(List.of(1), new BinaryTreeInorderTraversal().inorderTraversalMorris(root));
+		Assertions.assertIterableEquals(List.of(1), new LeetCode94().inorderTraversalMorris(root));
 	}
 
 	@Test
@@ -252,6 +252,6 @@ public class BinaryTreeInorderTraversalTest {
 		root.left.right = new TreeNode(2);
 		root.left.right.left = new TreeNode(4);
 		root.left.right.left.left = new TreeNode(5);
-		Assertions.assertIterableEquals(List.of(1, 5, 4, 2, 3), new BinaryTreeInorderTraversal().inorderTraversalMorris(root));
+		Assertions.assertIterableEquals(List.of(1, 5, 4, 2, 3), new LeetCode94().inorderTraversalMorris(root));
 	}
 }
