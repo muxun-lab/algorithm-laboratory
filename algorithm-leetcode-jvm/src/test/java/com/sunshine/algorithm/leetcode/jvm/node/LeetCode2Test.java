@@ -5,11 +5,11 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 /**
- * @author sunshine
+ * @author 慕勋
  * @created 2020-02-14
  */
-@DisplayName("两数相加测试类")
-public class AddTwoNumbersTest {
+@DisplayName("两数相加测试用例")
+public class LeetCode2Test {
 
 	@Test
 	public void addTwoNumbersTestOne() {
@@ -19,7 +19,7 @@ public class AddTwoNumbersTest {
 		ListNode l2 = new ListNode(5);
 		l2.next = new ListNode(6);
 		l2.next.next = new ListNode(4);
-		ListNode result = new AddTwoNumbers().addTwoNumbers(l1, l2);
+		ListNode result = new LeetCode2().addTwoNumbers(l1, l2);
 		StringBuilder resultBuilder = new StringBuilder();
 		while (result != null) {
 			resultBuilder.append(result.val);
@@ -36,7 +36,7 @@ public class AddTwoNumbersTest {
 		ListNode l2 = new ListNode(1);
 		l2.next = new ListNode(1);
 		l2.next.next = new ListNode(1);
-		ListNode result = new AddTwoNumbers().addTwoNumbers(l1, l2);
+		ListNode result = new LeetCode2().addTwoNumbers(l1, l2);
 		StringBuilder resultBuilder = new StringBuilder();
 		while (result != null) {
 			resultBuilder.append(result.val);
@@ -52,7 +52,7 @@ public class AddTwoNumbersTest {
 		l1.next.next = new ListNode(9);
 		ListNode l2 = new ListNode(1);
 		l2.next = new ListNode(1);
-		ListNode result = new AddTwoNumbers().addTwoNumbers(l1, l2);
+		ListNode result = new LeetCode2().addTwoNumbers(l1, l2);
 		StringBuilder resultBuilder = new StringBuilder();
 		while (result != null) {
 			resultBuilder.append(result.val);
