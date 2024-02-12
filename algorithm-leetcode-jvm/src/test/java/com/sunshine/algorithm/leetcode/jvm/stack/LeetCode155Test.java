@@ -5,10 +5,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 /**
- * 题号:
- * 题目:
- * 链接:
- * 详情:
  * @author 慕勋
  * @created 2024/2/11
  */
