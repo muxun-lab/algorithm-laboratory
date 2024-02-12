@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  * @date 2020/5/12
  */
 @DisplayName("反转链表单元测试")
-public class ReverseListTest {
+public class LeetCode206Test {
 
 	@Test
 	public void testReverseListTestOne() {
@@ -23,7 +23,7 @@ public class ReverseListTest {
 		request.next.next = new ListNode(3);
 		request.next.next.next = new ListNode(4);
 		request.next.next.next.next = new ListNode(5);
-		ListNode result = new ReverseList().reverseList(request);
+		ListNode result = new LeetCode206().reverseList(request);
 		while (result != null) {
 			Assertions.assertEquals(expected.val, result.val);
 			expected = expected.next;
@@ -43,7 +43,7 @@ public class ReverseListTest {
 		request.next.next = new ListNode(3);
 		request.next.next.next = new ListNode(4);
 		request.next.next.next.next = new ListNode(5);
-		ListNode result = new ReverseList().reverseListRecursion(request);
+		ListNode result = new LeetCode206().reverseListByRecursion(request);
 		while (result != null) {
 			Assertions.assertEquals(expected.val, result.val);
 			expected = expected.next;
