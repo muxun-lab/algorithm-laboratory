@@ -62,9 +62,10 @@ public class LeetCode3034 {
         int n = pattern.length;
         int[] next = new int[n + 1];
         next[0] = -1;
-        // 构造前缀表
+        // 构造前缀表，整体右移一位
         int pre = -1;
         for (int i = 0; i < n; i++) {
+            // 回退
             while (pre >= 0 && pattern[i] != pattern[pre]) {
                 pre = next[pre];
             }
