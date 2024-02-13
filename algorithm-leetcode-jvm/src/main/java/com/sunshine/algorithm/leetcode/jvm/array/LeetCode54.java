@@ -14,7 +14,7 @@ import java.util.List;
 public class LeetCode54 {
 
     /**
-     * 思路:
+     * 思路: 生成矩阵
      * @param matrix 矩阵
      * @return 矩阵中的元素
      */
