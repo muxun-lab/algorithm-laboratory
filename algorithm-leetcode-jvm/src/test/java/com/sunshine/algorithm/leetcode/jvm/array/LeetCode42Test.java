@@ -14,12 +14,24 @@ public class LeetCode42Test {
 	@Test
 	public void trapTestOne() {
 		int[] height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-        Assertions.assertEquals(6, new LeetCode42().trap(height));
+		int res = new LeetCode42().trap(height);
+		int expected = 6;
+		Assertions.assertEquals(expected, res);
 	}
 
 	@Test
-	public void trapDoublePointerTestOne() {
+	public void trapByDoublePointerTestTwo() {
 		int[] height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-        Assertions.assertEquals(6, new LeetCode42().trapDoublePointer(height));
+		int res = new LeetCode42().trapByDoublePointer(height);
+		int expected = 6;
+		Assertions.assertEquals(expected, res);
+	}
+
+	@Test
+	public void trapByDPTestThree() {
+		int[] height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+		int res = new LeetCode42().trapByDP(height);
+		int expected = 6;
+		Assertions.assertEquals(expected, res);
 	}
 }
