@@ -2,14 +2,20 @@ package com.sunshine.algorithm.leetcode.jvm.array;
 
 /**
  * 题号：11
- * 题目：盛水最多的容器
- * 详情：给定 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。
- * 在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。找出其中的两条线，使
- * 得它们与 x 轴共同构成的容器可以容纳最多的水。
- * @author sunshine
+ * <p>
+ * 题目：<a href="https://leetcode.cn/problems/container-with-most-water">盛水最多的容器</a>
+ * <p>
+ * 详情：给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。
+ * <p>
+ * 找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
+ * <p>
+ * 返回容器可以储存的最大水量。
+ * <p>
+ * 说明：你不能倾斜容器。
+ * @author 慕勋
  * @created 2020-01-30
  */
-public class MaxArea {
+public class LeetCode11 {
 
 	/**
 	 * 思路：暴力破解
@@ -33,7 +39,7 @@ public class MaxArea {
 	 * @param height 给定的数组高度数组
 	 * @return 面积最大的矩形
 	 */
-	public int maxAreaOptimization(int[] height) {
+	public int maxAreaByDoublePointer(int[] height) {
 		int start = 0;
 		int end = height.length - 1;
 		int max = 0;
