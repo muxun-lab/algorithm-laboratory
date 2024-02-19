@@ -2,15 +2,16 @@ package com.sunshine.algorithm.leetcode.jvm.node;
 
 /**
  * 题号：25
- * 题目：K 个一组翻转链表
- * 题链：https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
+ * 题目：<a href="https://leetcode-cn.com/problems/reverse-nodes-in-k-group/">K 个一组翻转链表</a>
  * 详情：给你一个链表，每 k 个节点一组进行翻转，请你返回翻转后的链表
+ * <p>
  * k 是一个正整数，它的值小于或等于链表的长度
+ * <p>
  * 如果节点总数不是 k 的整数倍，那么请将最后剩余的节点保持原有顺序
- * @author sunshine
+ * @author 慕勋
  * @date 2020/6/3
  */
-public class ReverseNodesInKGroup {
+public class LeetCode25 {
 
 	/**
 	 * 思路：计算区间，进行反转
@@ -30,7 +31,7 @@ public class ReverseNodesInKGroup {
 			count++;
 			temp = temp.next;
 		}
-		count = (count - count % k) / k;
+		count = count / k;
 		ListNode x = p;
 		ListNode y = p;
 		for (int i = 0; i < count; i++) {
@@ -39,9 +40,12 @@ public class ReverseNodesInKGroup {
 			}
 			ListNode start = x.next;
 			ListNode next = y.next;
+			// 节点断掉，防止把后面的也reverse掉
 			y.next = null;
 			x.next = reverse(start);
+			// 接上下一段链表
 			start.next = next;
+			// 重置到下一段开始之前
 			x = start;
 			y = x;
 		}

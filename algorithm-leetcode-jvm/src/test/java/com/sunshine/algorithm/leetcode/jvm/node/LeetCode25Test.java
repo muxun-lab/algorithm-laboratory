@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  * @date 2020/6/3
  */
 @DisplayName("K个一组翻转链表单元测试")
-public class ReverseNodesInKGroupTest {
+public class LeetCode25Test {
 
 	@Test
 	public void reverseKGroupTestOne() {
@@ -23,7 +23,7 @@ public class ReverseNodesInKGroupTest {
 		expected.next.next = new ListNode(4);
 		expected.next.next.next = new ListNode(3);
 		expected.next.next.next.next = new ListNode(5);
-		head = new ReverseNodesInKGroup().reverseKGroup(head, 2);
+		head = new LeetCode25().reverseKGroup(head, 2);
 		while (expected != null) {
 			Assertions.assertEquals(expected.val, head.val);
 			expected = expected.next;
@@ -43,7 +43,7 @@ public class ReverseNodesInKGroupTest {
 		expected.next.next = new ListNode(1);
 		expected.next.next.next = new ListNode(4);
 		expected.next.next.next.next = new ListNode(5);
-		head = new ReverseNodesInKGroup().reverseKGroup(head, 3);
+		head = new LeetCode25().reverseKGroup(head, 3);
 		while (expected != null) {
 			Assertions.assertEquals(expected.val, head.val);
 			expected = expected.next;
