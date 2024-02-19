@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  * @created 2020-03-12
  */
 @DisplayName("两两交换链表中的节点单元测试")
-public class SwapPairsTest {
+public class LeetCode24Test {
 
 	@Test
 	public void swapPairsTestOne() {
@@ -21,7 +21,7 @@ public class SwapPairsTest {
 		result.next = new ListNode(1);
 		result.next.next = new ListNode(4);
 		result.next.next.next = new ListNode(3);
-		head = new SwapPairs().swapPairs(head);
+        head = new LeetCode24().swapPairs(head);
 		while (head != null) {
 			Assertions.assertEquals(result.val, head.val);
 			head = head.next;
@@ -39,7 +39,7 @@ public class SwapPairsTest {
 		result.next = new ListNode(1);
 		result.next.next = new ListNode(4);
 		result.next.next.next = new ListNode(3);
-		head = new SwapPairs().swapPairsRecursion(head);
+        head = new LeetCode24().swapPairsRecursion(head);
 		while (head != null) {
 			Assertions.assertEquals(result.val, head.val);
 			head = head.next;

@@ -2,13 +2,14 @@ package com.sunshine.algorithm.leetcode.jvm.node;
 
 /**
  * 题号：24
- * 题目：两两交换链表中的节点
+ * 题目：<a href="https://leetcode.cn/problems/swap-nodes-in-pairs">两两交换链表中的节点</a>
  * 详情：给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。
+ * <p>
  * 你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
- * @author sunshine
+ * @author 慕勋
  * @created 2020-03-12
  */
-public class SwapPairs {
+public class LeetCode24 {
 
 	/**
 	 * 思路：迭代
@@ -16,27 +17,23 @@ public class SwapPairs {
 	 * @return 两两交换后的链表头节点
 	 */
 	public ListNode swapPairs(ListNode head) {
-		if (head == null || head.next == null) {
-			return head;
+		ListNode p = new ListNode(0);
+		p.next = head;
+		ListNode node = p;
+		while (node.next != null && node.next.next != null) {
+			// 记录两个端点
+			ListNode left = node.next;
+			ListNode right = node.next.next;
+			// 当前指针的下一个节点变为右节点
+			node.next = right;
+			// 当前左节点的下个指针变成下一对的指针
+			left.next = right.next;
+			// 当前右节点的下一个指针指向左节点
+			right.next = left;
+			// 将指针移动到现在的右节点位置
+			node = left;
 		}
-		ListNode p = head;
-		ListNode q = head.next;
-		ListNode appendListNode = new ListNode(0);
-		appendListNode.next = head;
-		ListNode r = appendListNode;
-		while (p != null && q != null) {
-			ListNode temp = new ListNode(q.val);
-			// p和q用于交换节点
-			// r用于存储上一次交换的末尾节点
-			p.next = q.next;
-			q.next = p;
-			r.next = temp;
-			r.next.next = p;
-			p = p.next;
-			r = r.next.next;
-			q = (p != null) ? p.next : p;
-		}
-		return appendListNode.next;
+		return p.next;
 	}
 
 	/**
