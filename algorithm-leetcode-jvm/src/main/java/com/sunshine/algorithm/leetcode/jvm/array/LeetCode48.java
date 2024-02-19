@@ -2,19 +2,21 @@ package com.sunshine.algorithm.leetcode.jvm.array;
 
 /**
  * 题号：48
- * 题目：旋转图像
+ * <p>
+ * 题目：<a href="https://leetcode.cn/problems/rotate-image">旋转图像</a>
  * 详情：给定一个 n × n 的二维矩阵表示一个图像。
+ * <p>
  * 将图像顺时针旋转 90 度。
  * <p>
- * 说明：
- * 你必须在原地旋转图像，这意味着你需要直接修改输入的二维矩阵。请不要使用另一个矩阵来旋转图像。
+ * 说明：你必须在原地旋转图像，这意味着你需要直接修改输入的二维矩阵。请不要使用另一个矩阵来旋转图像。
  * @author sunshine
  * @created 2020-02-24
  */
-public class RotateMatrix {
+public class LeetCode48 {
 
 	/**
 	 * 思路：旋转90度相当于转置矩阵，再翻转每一行
+	 * 先沿右上-左下的对角线进行翻转，再沿水平中轴线上翻转
 	 * @param matrix 二维数组矩阵
 	 */
 	public void rotate(int[][] matrix) {
