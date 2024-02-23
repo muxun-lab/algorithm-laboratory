@@ -1,4 +1,4 @@
-package com.sunshine.algorithm.leetcode.jvm.dfs;
+package com.sunshine.algorithm.leetcode.jvm.binarytree;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
