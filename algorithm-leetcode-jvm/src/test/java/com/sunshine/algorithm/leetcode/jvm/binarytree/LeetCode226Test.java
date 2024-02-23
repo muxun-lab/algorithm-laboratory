@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  * @created 2020-05-22
  */
 @DisplayName("翻转二叉树单元测试")
-public class InvertTreeTest {
+public class LeetCode226Test {
 
 	@Test
 	public void invertTreeTest() {
@@ -27,7 +27,7 @@ public class InvertTreeTest {
 		expected.left.right = new TreeNode(6);
 		expected.right.left = new TreeNode(3);
 		expected.right.right = new TreeNode(1);
-		Assertions.assertEquals(expected, new InvertTree().invertTree(root));
+		Assertions.assertEquals(expected, new LeetCode226().invertTree(root));
 	}
 
 	@Test
@@ -46,6 +46,6 @@ public class InvertTreeTest {
 		expected.left.right = new TreeNode(6);
 		expected.right.left = new TreeNode(3);
 		expected.right.right = new TreeNode(1);
-		Assertions.assertEquals(expected, new InvertTree().invertTreeRecursion(root));
+		Assertions.assertEquals(expected, new LeetCode226().invertTreeRecursion(root));
 	}
 }
