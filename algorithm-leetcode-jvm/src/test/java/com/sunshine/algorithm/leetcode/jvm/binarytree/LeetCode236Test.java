@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  * @date 2020/6/2
  */
 @DisplayName("二叉树的最近公共祖先单元测试")
-public class LowestCommonAncestorOfABinaryTreeTest {
+public class LeetCode236Test {
 
 	@Test
 	public void lowestCommonAncestorTestOne() {
@@ -25,7 +25,7 @@ public class LowestCommonAncestorOfABinaryTreeTest {
 		TreeNode expected = root;
 		TreeNode p = root.left;
 		TreeNode q = root.right;
-		Assertions.assertEquals(root, new LowestCommonAncestorOfABinaryTree().lowestCommonAncestor(root, p, q));
+		Assertions.assertEquals(root, new LeetCode236().lowestCommonAncestor(root, p, q));
 	}
 
 	@Test
@@ -42,7 +42,7 @@ public class LowestCommonAncestorOfABinaryTreeTest {
 		TreeNode expected = root.left;
 		TreeNode p = root.left;
 		TreeNode q = root.left.right.right;
-		Assertions.assertEquals(expected, new LowestCommonAncestorOfABinaryTree().lowestCommonAncestor(root, p, q));
+		Assertions.assertEquals(expected, new LeetCode236().lowestCommonAncestor(root, p, q));
 	}
 
 	@Test
@@ -59,7 +59,7 @@ public class LowestCommonAncestorOfABinaryTreeTest {
 		TreeNode expected = root;
 		TreeNode p = root.left;
 		TreeNode q = root.right;
-		Assertions.assertEquals(root, new LowestCommonAncestorOfABinaryTree().lowestCommonAncestorRecursion(root, p, q));
+		Assertions.assertEquals(root, new LeetCode236().lowestCommonAncestorRecursion(root, p, q));
 	}
 
 	@Test
@@ -76,6 +76,6 @@ public class LowestCommonAncestorOfABinaryTreeTest {
 		TreeNode expected = root.left;
 		TreeNode p = root.left;
 		TreeNode q = root.left.right.right;
-		Assertions.assertEquals(expected, new LowestCommonAncestorOfABinaryTree().lowestCommonAncestorRecursion(root, p, q));
+		Assertions.assertEquals(expected, new LeetCode236().lowestCommonAncestorRecursion(root, p, q));
 	}
 }

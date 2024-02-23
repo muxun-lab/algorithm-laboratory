@@ -5,17 +5,23 @@ import java.util.HashSet;
 
 /**
  * 题号：236
- * 题目：二叉树的最近公共祖先
- * 题链：https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/
+ * <p>
+ * 题目：<a href="https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/">二叉树的最近公共祖先</a>
+ * <p>
  * 详情：给定一个二叉树, 找到该树中两个指定节点的最近公共祖先
+ * <p>
  * 公共祖先定义：
+ * <p>
  * * 对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x
+ * <p>
  * * 满足 x 是 p、q 的祖先且 x 的深度尽可能大
+ * <p>
  * * 一个节点也可以是它自己的祖先
- * @author sunshine
+ * <p>
+ * @author 慕勋
  * @date 2020/6/2
  */
-public class LowestCommonAncestorOfABinaryTree {
+public class LeetCode236 {
 
 	private HashMap<Integer, TreeNode> parentMap = new HashMap<>();
 
