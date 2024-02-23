@@ -6,8 +6,9 @@ import java.util.List;
 
 /**
  * 题号: 94
- * 题目: 二叉树的中序遍历
- * 链接: <a href="https://leetcode.cn/problems/binary-tree-inorder-traversal">二叉树的中序遍历</a>
+ * <p>
+ * 题目: <a href="https://leetcode.cn/problems/binary-tree-inorder-traversal">二叉树的中序遍历</a>
+ * <p>
  * 详情: 给定一个二叉树，返回它的 中序 遍历。
  * @author 慕勋
  * @created 2020-03-13
