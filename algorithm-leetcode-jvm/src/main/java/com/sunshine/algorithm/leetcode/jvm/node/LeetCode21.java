@@ -2,14 +2,16 @@ package com.sunshine.algorithm.leetcode.jvm.node;
 
 /**
  * 题号：21
- * 题目：合并两个有序链表
- * 题链：https://leetcode-cn.com/problems/merge-two-sorted-lists/
+ * <p>
+ * 题链：<a href="https://leetcode-cn.com/problems/merge-two-sorted-lists/">合并两个有序链表</a>
+ * <p>
  * 详情：将两个升序链表合并为一个新的升序链表并返回
+ * <p>
  * 新链表是通过拼接给定的两个链表的所有节点组成的
- * @author sunshine
+ * @author 慕勋
  * @created 2020-05-13
  */
-public class MergeTwoLists {
+public class LeetCode21 {
 
 	/**
 	 * 思路：开辟新的链表空间
