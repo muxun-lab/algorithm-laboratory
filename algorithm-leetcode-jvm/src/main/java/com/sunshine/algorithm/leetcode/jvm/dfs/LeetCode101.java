@@ -4,24 +4,14 @@ import java.util.LinkedList;
 
 /**
  * 题号：101
- * 题目：对称二叉树
+ * <p>
+ * 题目：<a href="https://leetcode.cn/problems/symmetric-tree">对称二叉树</a>
+ * <p>
  * 详情：给定一个二叉树，检查它是否是镜像对称的
- * *    1
- * *   / \
- * *  2   2
- * * / \ / \
- * *3  4 4  3
- * 是对称的
- * *    1
- * *   / \
- * *  2   2
- * *   \   \
- * *   3    3
- * 不是对称的
- * @author sunshine
+ * @author 慕勋
  * @created 2020-03-10
  */
-public class SymmetricTree {
+public class LeetCode101 {
 
 	/**
 	 * 思路：递归

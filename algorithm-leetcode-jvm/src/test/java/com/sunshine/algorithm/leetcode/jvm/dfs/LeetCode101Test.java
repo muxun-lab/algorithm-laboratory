@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  * @created 2020-03-10
  */
 @DisplayName("对称二叉树单元测试")
-public class SymmetricTreeTest {
+public class LeetCode101Test {
 
 	@Test
 	public void isSymmetricTreeTestOne() {
@@ -20,7 +20,7 @@ public class SymmetricTreeTest {
 		root.left.right = new TreeNode(4);
 		root.right.left = new TreeNode(4);
 		root.right.right = new TreeNode(3);
-		Assertions.assertTrue(new SymmetricTree().isSymmetric(root));
+		Assertions.assertTrue(new LeetCode101().isSymmetric(root));
 	}
 
 	@Test
@@ -30,7 +30,7 @@ public class SymmetricTreeTest {
 		root.right = new TreeNode(2);
 		root.left.right = new TreeNode(4);
 		root.right.right = new TreeNode(3);
-		Assertions.assertFalse(new SymmetricTree().isSymmetric(root));
+		Assertions.assertFalse(new LeetCode101().isSymmetric(root));
 	}
 
 	@Test
@@ -42,7 +42,7 @@ public class SymmetricTreeTest {
 		root.left.right = new TreeNode(4);
 		root.right.left = new TreeNode(4);
 		root.right.right = new TreeNode(3);
-		Assertions.assertTrue(new SymmetricTree().isSymmetricIterator(root));
+		Assertions.assertTrue(new LeetCode101().isSymmetricIterator(root));
 	}
 
 	@Test
@@ -52,6 +52,6 @@ public class SymmetricTreeTest {
 		root.right = new TreeNode(2);
 		root.left.right = new TreeNode(4);
 		root.right.right = new TreeNode(3);
-		Assertions.assertFalse(new SymmetricTree().isSymmetricIterator(root));
+		Assertions.assertFalse(new LeetCode101().isSymmetricIterator(root));
 	}
 }
