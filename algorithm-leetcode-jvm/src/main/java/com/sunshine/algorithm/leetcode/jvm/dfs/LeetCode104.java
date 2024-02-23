@@ -5,20 +5,18 @@ import java.util.List;
 
 /**
  * 题号：104
- * 题目：二叉树的最大深度
+ * <p>
+ * 题目：<a href="https://leetcode.cn/problems/maximum-depth-of-binary-tree">二叉树的最大深度</a>
+ * <p>
  * 详情：给定一个二叉树，找出其最大深度
+ * <p>
  * 二叉树的深度为根节点到最远叶子节点的最长路径上的节点数
- * *    3
- * *   / \
- * *  9  20
- * *    /  \
- * *   15   7
- * 最大深度为3
+ * <p>
  * 说明：叶子节点是指没有子节点的节点
- * @author sunshine
+ * @author 慕勋
  * @created 2020-03-10
  */
-public class MaxDepthOfBinaryTree {
+public class LeetCode104 {
 
 	/**
 	 * 思路：广度优先遍历
