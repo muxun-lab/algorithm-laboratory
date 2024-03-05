@@ -31,6 +31,7 @@ public class LeetCode147 {
         while (cur != null) {
             if (sorted.val <= cur.val) {
                 sorted = sorted.next;
+                cur = sorted.next;
             } else {
                 ListNode prev = resNode;
                 while (prev.next.val <= cur.val) {
@@ -39,8 +40,8 @@ public class LeetCode147 {
                 sorted.next = cur.next;
                 cur.next = prev.next;
                 prev.next = cur;
+                cur = sorted.next;
             }
-            cur = sorted.next;
         }
         return resNode.next;
     }
