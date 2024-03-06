@@ -5,12 +5,15 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * 题目：杨辉三角
+ * 题号: 118
+ * <p>
+ * 题目: <a href="https://leetcode.cn/problems/pascals-triangle">杨辉三角</a>
+ * <p>
  * 给定一个非负整数 numRows，生成杨辉三角的前 numRows 行
- * @author sunshine
+ * @author 慕勋
  * @created 2020-01-24
  */
-public class PascalTriangle {
+public class LeetCode118 {
 	/**
 	 * 思路：n-2 = 上个数组每个数相加而得
 	 * n行的数组元素个数：n
@@ -52,7 +55,7 @@ public class PascalTriangle {
 	 * @param numRows 杨辉三角行数
 	 * @return 杨辉三角
 	 */
-	public List<List<Integer>> generateSolutionTwo(int numRows) {
+	public List<List<Integer>> generateOptimization(int numRows) {
 		List<List<Integer>> pascalTriangleList = new ArrayList<>();
 		if (numRows <= 0) {
 			return pascalTriangleList;
