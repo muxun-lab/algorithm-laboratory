@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 题目：杨辉三角升级版
- * 给定一个非负索引 k，其中 k ≤ 33，返回杨辉三角的第 k 行。
- * 解法一：动态规划，只保留上一行的数据即可
- * 解法二：公式法，组合公式
- * Cnk = Cn(k-1) * (n - k + 1) / k
- * @author sunshine
+ * 题号: 119
+ * <p>
+ * 题目: <a href="https://leetcode.cn/problems/pascals-triangle-ii">杨辉三角 II</a>
+ * <p>
+ * 详情: 给定一个非负索引 rowIndex，返回「杨辉三角」的第 rowIndex 行。
+ * @author 慕勋
  * @created 2020-01-24
  */
-public class PascalTriangleUpgrade {
+public class LeetCode119 {
 
 	/**
-	 * 组合公式
+	 * 思路: 组合公式
 	 * @param rowIndex 杨辉三角所在的行
 	 * @return 指定行的杨辉三角集合
 	 */
