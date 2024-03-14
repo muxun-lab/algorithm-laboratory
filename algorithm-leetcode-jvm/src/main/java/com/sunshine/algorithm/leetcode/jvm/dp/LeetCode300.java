@@ -4,17 +4,22 @@ import java.util.Arrays;
 
 /**
  * 题号：300
+ * <p>
  * 题目：最长上升子序列
+ * <p>
  * 详情：给定一个无序的整数数组，找到其中最长上升子序列的长度
+ * <p>
  * 说明:
+ * <p>
  * * 可能会有多种最长上升子序列的组合，你只需要输出对应的长度即可
  * * 你算法的时间复杂度应该为 O(n2)
  * 进阶:
+ * <p>
  * * 你能将算法的时间复杂度降低到 O(n log n) 吗?
- * @author sunshine
+ * @author 慕勋
  * @created 2020-03-14
  */
-public class LengthOfLongestIncreasingSubsequence {
+public class LeetCode300 {
 
 	/**
 	 * 思路：动态规划
@@ -73,7 +78,7 @@ public class LengthOfLongestIncreasingSubsequence {
 	 * @param nums 给定无序数组
 	 * @return 最长上升子序列的长度
 	 */
-	public int lengthOfLISUpgrade(int[] nums) {
+	public int lengthOfLISByGreedy(int[] nums) {
 		int[] tails = new int[nums.length];
 		int max = 0;
 		for (int num : nums) {
