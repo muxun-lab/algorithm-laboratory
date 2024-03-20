@@ -1,6 +1,5 @@
-package com.sunshine.algorithm.leetcode.jvm.desigh;
+package com.sunshine.algorithm.leetcode.jvm.design;
 
-import com.sunshine.algorithm.leetcode.jvm.design.LeetCode225;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
