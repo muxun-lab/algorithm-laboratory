@@ -1,27 +1,33 @@
 package com.sunshine.algorithm.leetcode.jvm.array;
 
 /**
- * 题号：4
- * 题目：寻找两个有序数组的中位数
- * 详情：给定两个大小为m和n的有序数组nums1和nums2
- * 请你找出这两个有序数组的中位数，并且要求算法的时间复杂度为O(log(m + n))
- * 你可以假设nums1和nums2不会同时为空
- * @author sunshine
+ * 题号: 4
+ * <p>
+ * 链接: <a href="https://leetcode.cn/problems/median-of-two-sorted-arrays">找两个正序数组的中位数</a>
+ * <p>
+ * 详情: 给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的 中位数 。
+ * <p>
+ * 算法的时间复杂度应该为 O(log (m+n)) 。
+ * @author 慕勋
  * @created 2020-03-16
  */
-public class FindMedianSortedArrays {
+public class LeetCode4 {
 
 	/**
 	 * 思路：双指针
+	 * 如果总长度为基数的话，返回中间值即可
+	 * 否则返回两个中间相邻的数组，然后除以2即可
 	 * @param nums1 有序数组一
 	 * @param nums2 有序数组二
 	 * @return 给定的两个有序数组的中位数
 	 */
 	public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 		int medianIndex = (nums1.length + nums2.length) / 2;
-		int i = 0, j = 0;
+		int i = 0;
+		int j = 0;
 		int count = 0;
-		int first = 0, second = 0;
+		int first = 0;
+		int second = 0;
 		while (count <= medianIndex) {
 			first = second;
 			if (i < nums1.length && j < nums2.length) {
