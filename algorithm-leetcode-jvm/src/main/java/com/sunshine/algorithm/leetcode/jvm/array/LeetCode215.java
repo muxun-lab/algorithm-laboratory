@@ -5,13 +5,14 @@ import java.util.PriorityQueue;
 
 /**
  * 题号：215
- * 题目：数组中第K个最大元素
+ * 题目：<a href="https://leetcode.cn/problems/kth-largest-element-in-an-array">数组中第K个最大元素</a>
  * 详情：在未排序的数组中找到第 k 个最大的元素。
+ * <p>
  * 请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。
- * @author sunshine
+ * @author 慕勋
  * @created 2020-02-09
  */
-public class FirstKthLargest {
+public class LeetCode215 {
 
 	/**
 	 * 思路：小顶堆
