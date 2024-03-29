@@ -1,5 +1,7 @@
 package com.sunshine.algorithm.leetcode.jvm.array;
 
+import com.sunshine.algorithm.leetcode.jvm.Lack;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
@@ -18,6 +20,7 @@ import java.util.PriorityQueue;
  * @author 慕勋
  * @created 2024-03-22
  */
+@Lack
 public class LeetCode2617 {
 
     /**
