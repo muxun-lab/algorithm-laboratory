@@ -1,5 +1,7 @@
 package com.sunshine.algorithm.leetcode.jvm.array;
 
+import java.util.Arrays;
+
 /**
  * 题号: 2549
  * <p>
@@ -16,11 +18,25 @@ package com.sunshine.algorithm.leetcode.jvm.array;
 public class LeetCode2549 {
 
     /**
-     * 思路:
+     * 思路: 使用数组记录出现在桌面上的次数
      * @param n 正整数
-     * @return
+     * @return 出现在桌面上的不同整数的数目
      */
     public int distinctIntegers(int n) {
-        return 0;
+        int[] nums = new int[n + 1];
+        nums[n] = 1;
+        for (int k = 0; k < n; k++) {
+            for (int x = 1; x <= n; x++) {
+                if (nums[x] == 0) {
+                    continue;
+                }
+                for (int i = 1; i <= n; i++) {
+                    if (x % i == 1) {
+                        nums[i] = 1;
+                    }
+                }
+            }
+        }
+        return Arrays.stream(nums).sum();
     }
 }
