@@ -2,15 +2,18 @@ package com.sunshine.algorithm.leetcode.jvm.dp;
 
 /**
  * 题号：518
- * 题目：零钱兑换 II
- * 题链：https://leetcode-cn.com/problems/coin-change-2/
+ * <p>
+ * 题目：<a href="https://leetcode-cn.com/problems/coin-change-2/">零钱兑换 II</a>
+ * <p>
  * 详情：给定不同面额的硬币和一个总金额
+ * <p>
  * 写出函数来计算可以凑成总金额的硬币组合数
+ * <p>
  * 假设每一种面额的硬币有无限个
- * @author sunshine
+ * @author 慕勋
  * @date 2020/6/1
  */
-public class CoinChangeII {
+public class LeetCode518 {
 
 	/**
 	 * 思路：动态规划
